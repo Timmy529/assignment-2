@@ -1,0 +1,7 @@
+name: assignment-2
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytest
