@@ -5,7 +5,7 @@
 
 #### Run application (without environment):
 To run the application without building the environment,
-1. (on Windows) simply download the `bmi_calculator.exe` file from this repository.
+1. (on Windows) simply download the `bmi_calculator.exe` file from this repository (https://github.com/Timmy529/assignment-2/raw/refs/heads/main/bmi_calculator.exe).
 2. Start a cli such as `powershell` or `cmd`. (Win + R, "cmd")
 3. Navigate to the downloaded executable in the cli using `cd`. (`cd Downloads`)
 4. Run the executable. (`bmi_calculator.exe --weight <weight_lb> --height <height_in>`)
