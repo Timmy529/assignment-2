@@ -1,8 +1,19 @@
 """ test_bmi_calculator.py
-This module contains unit tests for the determine_category function in bmi_calculator.py.
+This module contains unit tests for the calculate_bmi and determine_category function in bmi_calculator.py.
 """
 import pytest
-from bmi_calculator import determine_category
+from bmi_calculator import determine_category, calculate_bmi
+
+@pytest.mark.parametrize("height, weight, expected_bmi", [
+    (65, 100, 17.0),  # Underweight
+    (70, 150, 22.0),  # Normal weight
+    (68, 180, 28.0),  # Overweight
+    (65, 200, 34),  # Obese
+])
+def test_calculate_bmi(height, weight, expected_bmi):
+    assert calculate_bmi(height, weight) == pytest.approx(expected_bmi, rel=1e-2)
+
+
 @pytest.mark.parametrize("bmi, expected_category", [
 
     # Test cases for Underweight category
